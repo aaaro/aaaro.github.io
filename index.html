@@ -32,7 +32,17 @@
             FB.getLoginStatus(function(response) {
                 statusChangeCallback(response);
             });
-            }
+        }
+        function statusChangeCallback(response) {
+				if (response.status === 'connected') {
+					FB.api('/me', function(response) {
+						document.getElementById('fb-name').innerHTML = 'Imię: ' + response.name;
+					});
+				} 
+				else {
+					document.getElementById('fb-name').innerHTML = 'Imię: ';
+				}
+			}
       </script>
 </head>
 <body>
