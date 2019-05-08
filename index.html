@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 <head>
-    <meta charset="UTF-8">
-    <title>Facebook API</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Strona 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
     <script>
         window.fbAsyncInit = function() {
           FB.init({
@@ -34,11 +34,26 @@
             });
             }
       </script>
+</head>
+<body>
+    <div class="topnav" id="topnav">
+        <a href="" class="page-link" data-page="home">Strona główna</a>
+        <a href="" class="page-link" data-page="errors">Błędy walidacji</a>
+        <a href="" class="page-link" data-page="tictactoe">Kółko i Krzyżyk</a>
+        <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="login-section">
+        <div id="fb-name">Imię: </div>
+        <div id="fb-surname">Nazwisko: </div>
+        <div id="fb-email">Email: </div>
       <div id="login-button">
         <fb:login-button 
             scope="public_profile,email"
             onlogin="checkLoginState();">
         </fb:login-button>
       </div>
+    </div>
 </body>
 </html>		
