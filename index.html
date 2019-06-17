@@ -1,68 +1,36 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Strona 1</title>
+    <title>Projekt PWI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '578256315999805',
-            cookie     : true,
-            xfbml      : true,
-            version    : 'v3.3'
-          });
-            
-          FB.AppEvents.logPageView();   
-            
-        };
-      
-        (function(d, s, id){
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement(s); js.id = id;
-           js.src = "https://connect.facebook.net/en_US/sdk.js";
-           fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-
-         function checkLoginState() {
-            FB.getLoginStatus(function(response) {
-                statusChangeCallback(response);
-            });
-        }
-        function statusChangeCallback(response) {
-				if (response.status === 'connected') {
-					FB.api('/me', function(response) {
-						document.getElementById('fb-name').innerHTML = 'Imię i nazwisko: ' + response.name;
-                        document.getElementById('fb-id').innerHTML = 'Id użytkownika: ' + response.id;
-					});
-				} 
-				else {
-					document.getElementById('fb-name').innerHTML = 'Imię i nazwisko: ';
-                    document.getElementById('fb-id').innerHTML = 'Id użytkownika: ';
-				}
-			}
-      </script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="View/main.css" />
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"
+        integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="Controller/index.js"></script>
+    <script src="Model/translation.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 </head>
-<body>
-    <div class="topnav" id="topnav">
-        <a href="http://ryczkowski.cba.pl/">Strona główna</a>
-        <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-                <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <div id="login-section">
-        <div id="fb-name">Imię: </div>
-        <div id="fb-id">Id użytkownika:: </div>
-      <div id="login-button">
-        <fb:login-button 
-            scope="public_profile,email"
-            onlogin="checkLoginState();">
-        </fb:login-button>
-      </div>
+
+<body onload="onload()">
+    <header>
+        <div id="menu" class="w3-bar">
+            <div class="w3-bar-item w3-mobile menu_text" onclick="show('home')">Home</div>
+            <div class="w3-bar-item w3-mobile menu_text" onclick="show('main')">Moje CV</div>
+            <div class="w3-bar-item w3-mobile menu_text" onclick="show('kont')">Kontakt</div>
+            <div class="w3-bar-item w3-mobile menu_text w3-right" onclick="translateFromMyXml('eng')">Eng</div>
+            <div class="w3-bar-item w3-mobile menu_text w3-right" onclick="translateFromMyXml('pl')">Pl</div>
+        </div>
+    </header>
+    <div id="root">
+        <iframe class="frame" id="home" src="View/home.html"></iframe>
+        <iframe class="frame" id="main" src="View/main.html"></iframe>
+        <iframe class="frame" id="kont" src="View/kont.html"></iframe>
     </div>
 </body>
-</html>		
+</html>
