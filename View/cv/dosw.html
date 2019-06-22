@@ -7,44 +7,32 @@
     <title>CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css">
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-    <script src="../Controller/cv.js"></script>
+    <script src="Controller/index.js"></script>
 </head>
 
-<body onload="onload()">
-    <header>
-        <div id="menu" class="w3-bar">
-            <div class="w3-bar-item w3-mobile menu_sub-text" onclick="show('dosw')">Doświadczenie</div>
-            <div class="w3-bar-item w3-mobile menu_sub-text" onclick="show('wyksz')">Wykształcenie</div>
-            <div class="w3-bar-item w3-mobile menu_sub-text" onclick="show('umi')">Umiejętności</div>
-        </div>
-    </header>
-    <div class="w3-container w3-center">
-        <div class="main_text verdana">
-            Curriculum Vitae
-        </div>
-    </div>
-    <div id="root">
-        <div class="w3-container frame" id="dosw">
-            <div class="w3-container w3-light-blue">
-                <div class="w3-container w3-left w3-animate-opacity">
-                    <div class="submain_text verdana cl_white translatable">Doświadczenie zawodowe:</div>
-                    <div class="sub_text verdana">2018 - Obecnie: Staż na pozycji programisty .NET w firmie InfoSolutions<br><br>Praca nad własnymi projektami, które służyły poszerzeniu wiedzy o różnych językach programowania, m. in. C# i JavaScript.<br>W ramach studiów pracowałem także w 15–osobowej grupie, która miała za zadanie zaprojektować i zrealizować projekt zadany przez klienta.<br><br>Profil z ukończonymi projektami: github.com/aaaro<br></div>                </div>
+<body>
+    <div class="w3-container">
+        <div class="w3-container w3-light-blue">
+            <div class="w3-container w3-left w3-animate-opacity">
+                <div class="submain_text verdana cl_white translatable">Doświadczenie zawodowe:</div>
+                <div class="sub_text verdana">2018 - Obecnie: Staż na pozycji programisty .NET w firmie InfoSolutions<br><br>Praca nad własnymi projektami, które służyły poszerzeniu wiedzy o różnych językach programowania, m. in. C# i JavaScript.<br>W ramach studiów pracowałem także w 15–osobowej grupie, która miała za zadanie zaprojektować i zrealizować projekt zadany przez klienta.<br><br>Profil z ukończonymi projektami: github.com/aaaro<br><br></div>
             </div>
         </div>
-        <div class="w3-container frame" id="wyksz">
+    </div>
+    <div class="w3-container">
             <div class="w3-container w3-light-blue">
                 <div class="w3-container w3-left w3-animate-opacity">
                     <div class="submain_text verdana cl_white translatable">Wykształcenie:</div>
                     <div class="sub_text verdana">
-                        2016 – obecnie: Szkoła Główna Gospodarstwa Wiejskiego, Wydział Zastosowania Informatyki i Matematyki, kierunek: Informatyka,<br>
-                        2013 – 2016: Liceum nr IV im. Adama Mickiewicza w Warszawie, profil: matematyczno-informatyczny<br>
+                            2016 – obecnie: Szkoła Główna Gospodarstwa Wiejskiego, Wydział Zastosowania Informatyki i Matematyki, kierunek: Informatyka,<br>
+                            2013 – 2016: Liceum nr IV im. Adama Mickiewicza w Warszawie, profil: matematyczno-informatyczny<br><br>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="w3-container frame" id="umi">
+    <div class="w3-container">
             <div class="w3-container w3-light-blue">
                 <div class="w3-container w3-left w3-animate-opacity">
                     <div class="submain_text verdana cl_white translatable">Umiejętności:</div>
@@ -64,5 +52,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </body>

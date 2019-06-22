@@ -39,11 +39,19 @@ body {
      font-weight: bold;
      color: #FFFFFF;
  }
- 
+ .menu_sub-text {
+    font-family: 'Verdana'; 
+    font-weight: bold;
+    color: #FFFFFF;
+}
  .menu_text:hover{
      background-color: #FFFFFF;
      color: #05386B;
  }
+ .menu_sub-text:hover{
+    background-color: rgb(100, 161, 241);
+    color: #FFFFFF;
+}
  main{
      margin-left: 1.5cm;
      margin-right: 1.5cm; 
