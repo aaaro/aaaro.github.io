@@ -34,6 +34,8 @@ x.forEach(element => {
 });
 
 function translateFromMyXml(lng) {
+    oReq.open("GET", "https://aaaro.github.io/Model/translations.xml");
+    oReq.send();
     if (lng == "eng") {
         for (var i = 0; i < 3; i++) {
             var translatableElements = document.getElementsByTagName("iframe")[i].contentWindow.document.getElementsByClassName("translatable");
