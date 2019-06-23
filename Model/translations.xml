@@ -19,4 +19,16 @@
 		<key>Umiejętności:</key>
 		<eng>Skills:</eng>
 	</Translation>
+	<Translation>
+		<key>Kod do pobrania</key>
+		<eng>Download source code</eng>
+	</Translation>
+	<Translation>
+		<key>Dodatkowe informacje:</key>
+		<eng>Additional info:</eng>
+	</Translation>
+	<Translation>
+		<key>Kontakt</key>
+		<eng>Contact</eng>
+	</Translation>
 </Document>
