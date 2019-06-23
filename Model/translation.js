@@ -7,10 +7,9 @@ class translation {
 
 var translations = [];
 
-var txt = "<Document><Translation><key>Doświadczenie zawodowe:</key><eng>Experience:</eng></Translation><Translation><key>Strona główna</key><eng>Home page</eng></Translation><Translation><key>Witam na mojej stronie!</key><eng>Welcome to my page!</eng></Translation><Translation><key>Wykształcenie:</key><eng>Education:</eng></Translation><Translation><key>Umiejętności:</key><eng>Skills:</eng></Translation><Translation><key>Dodatkowe informacje:</key><eng>Additional info:</eng></Translation></Document>";
+var txt = "";
 function reqListener () {
     txt = this.responseText;
-    console.log(txt);
 }
   
 var oReq = new XMLHttpRequest();
