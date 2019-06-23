@@ -19,4 +19,8 @@
 		<key>Umiejętności:</key>
 		<eng>Skills:</eng>
 	</Translation>
+	<Translation>
+		<key>Bardzo dobra znajomość języka C# oraz platformy .NET,<br>Znajomość języków: C++, Java, JavaScript (w tym biblioteka JQuery), HTML, XML, CSS, PHP, TSQL,<br>Doświadczenie w obsłudze środowisk programistycznych, w tym: Microsoft Visual Studio,<br>Umiejętność obsługi systemu kontroli wersji Git,<br>Umiejętność pracy w grupie,<br>Umiejętność swobodnego porozumiewania się w języku angielskim</key>
+		<eng>Very good knowledge of C# and .NET platform,<br>Knowledge of: C++, Java, Javascript (and JQuery library), HTML, XML, CSS, PHP, TSQL,<br>Experience in handling development software, e.g. Microsoft Visual Studio,<br>Experience in usage of version control (Git),</eng>
+	</Translation>
 </Document>
