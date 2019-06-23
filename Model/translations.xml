@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Translation>
-    <key>Doświadczenie zawodowe:</key>
-    <eng>Experience:</eng>
-</Translation>
-<Translation>
-    <key>Strona główna</key>
-    <eng>Home page</eng>
-</Translation>
-<Translation>
-    <key>Witam na mojej stronie!</key>
-    <eng>Welcome to my webpage!</eng>
-</Translation>
-<Translation>
-    <key>Wykształcenie:</key>
-    <eng>Education:</eng>
-</Translation>
-<Translation>
-    <key>Umiejętności:</key>
-    <eng>Skills:</eng>
-</Translation>
+<Document>
+	<Translation>
+		<key>Doświadczenie zawodowe:</key>
+		<eng>Experience:</eng>
+	</Translation>
+	<Translation>
+		<key>Strona główna</key>
+		<eng>Home page</eng>
+	</Translation>
+	<Translation>
+		<key>Witam na mojej stronie!</key>
+		<eng>Welcome to my webpage!</eng>
+	</Translation>
+	<Translation>
+		<key>Wykształcenie:</key>
+		<eng>Education:</eng>
+	</Translation>
+	<Translation>
+		<key>Umiejętności:</key>
+		<eng>Skills:</eng>
+	</Translation>
+</Document>
